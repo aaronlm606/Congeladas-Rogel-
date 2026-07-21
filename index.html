@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congeladas Roger | Helados y Paletas</title>
+    <style>
+        :root {
+            --primary: #00a896;
+            --accent: #f77f00;
+            --bg: #f8f9fa;
+            --text: #2b2d42;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #028090, #00a896);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .rating {
+            background: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-top: 0.8rem;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 0.5rem;
+        }
+
+        .flavors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.8rem;
+            text-align: center;
+        }
+
+        .flavor-item {
+            background: #eef9f8;
+            padding: 0.8rem;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #028090;
+            border: 1px solid #b2e2de;
+        }
+
+        .info-item {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-whatsapp {
+            display: block;
+            background-color: #25d366;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1eb857;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍧 Congeladas Roger</h1>
+        <p>100% Naturales, refrescantes y deliciosas</p>
+        <div class="rating">⭐ 4.6 (8 Opiniones en Google)</div>
+    </header>
+
+    <div class="container">
+
+        <!-- Sección de Sabores -->
+        <div class="card">
+            <h2>🍦 Nuestros Sabores</h2>
+            <p style="margin-bottom: 1rem;">Pregunta por tu sabor favorito de congeladas y helados:</p>
+            <div class="flavors-grid">
+                <div class="flavor-item">🥥 Coco</div>
+                <div class="flavor-item">🍋 Limón</div>
+                <div class="flavor-item">🍓 Fresa</div>
+                <div class="flavor-item">☕ Capuchino</div>
+                <div class="flavor-item">🍾 Rompope</div>
+                <div class="flavor-item">🍒 Grosella</div>
+                <div class="flavor-item">🥚 Huevo Kinder</div>
+                <div class="flavor-item">🍫 Gansito</div>
+            </div>
+        </div>
+
+        <!-- Ubicación y Horarios -->
+        <div class="card">
+            <h2>📍 Ubicación y Horario</h2>
+            <div class="info-item">
+                📌 <strong>Dirección:</strong> Av. Real del Valle Sur Mz 63 Lt 38C, Real del Valle, 55883 Tepexpan, Méx.
+            </div>
+            <div class="info-item">
+                ⏰ <strong>Horario:</strong> Sábados y Domingos (Abre a la 1:00 p.m.)
+            </div>
+            <div class="info-item">
+                📞 <strong>Teléfono:</strong> 55 5910 4479
+            </div>
+
+            <!-- Botón directo a WhatsApp -->
+            <a href="https://wa.me/525559104479?text=Hola,%20quisiera%20pedir%20información%20sobre%20las%20congeladas" class="btn-whatsapp" target="_blank">
+                💬 Pedir por WhatsApp
+            </a>
+        </div>
+
+        <!-- Opiniones -->
+        <div class="card">
+            <h2>💬 Lo que dicen nuestros clientes</h2>
+            <blockquote style="font-style: italic; border-left: 3rem solid #00a896; padding-left: 1rem; margin: 0.5rem 0;">
+                "¡Las congeladas muy deliciosas! ¡La atención de primera!! Sin duda regresaría...!!"
+            </blockquote>
+            <p style="font-size: 0.85rem; text-align: right; color: #6c757d;">— Juan Carlos M.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Espacio amigable con LGBTQ+ 🌈 | Congeladas Roger © 2026</p>
+    </footer>
+
+</body>
+</html>
